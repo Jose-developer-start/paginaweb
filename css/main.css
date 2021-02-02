@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Font*/
+
+h1,
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3,
+h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+.main-title {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-main {
+    background-color: #4a719e;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: #f1f1f1;
+    width: 100%;
+    padding: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #baff9f;
+    background-color: #463939;
+}
+
+.image-main {
+    background-image: url(../descarga.jpeg);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-main:before {
+    content: '';
+    position: absolute;
+    height: 250px;
+    background-color: #382b2b;
+    width: 100%;
+    opacity: .6;
+}
+
+.image-main h2 {
+    color: #f1f1f1;
+    font-weight: 700;
+    padding: 25px;
+    position: relative;
+}
+
+.image-main .direction {
+    display: flex;
+    color: #f1f1ff;
+    position: relative;
+}
+
+.direction .direction-main {
+    display: flex;
+    align-items: flex-end;
+}
+
+.btn {
+    position: relative;
+    color: #f1f1f1;
+    font-weight: 700;
+    padding: 8px 25px;
+    background-color: #4a719e;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+
+/*Style main*/
+
+body {
+    background-color: #f1f3f2;
+}
+
+.main {
+    background-color: #fafafa;
+    margin: auto;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content h2 {
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3 {
+    padding: 22px;
+    font-weight: 0;
+}
+
+.card p {
+    padding: 20px 0;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.circle {
+    background-color: #ffec00;
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #4b7069;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form h3 {
+    text-align: center;
+    padding: 12px;
+    color: #ffec00;
+    font-weight: 700;
+}
+
+.form-control {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    resize: none;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    background-color: #ffec00;
+    color: #111111;
+}
+
+footer p {
+    text-align: center;
+    padding: 18px;
+    color: #777777;
+}
+
+@media (min-width: 760px) {
+    .nav-main {
+        flex-direction: row;
+        padding: 0 65px;
+    }
+    .image-main {
+        height: 500px;
+    }
+    .image-main:before {
+        height: 500px;
+    }
+    .image-main h2 {
+        font-size: 32px;
+    }
+    .main {
+        width: 90%;
+        margin-top: 40px;
+    }
+    .row {
+        display: flex;
+    }
+    .card {
+        margin: 0 15px;
+    }
+    .form {
+        width: 680px;
+    }
+    .form-group {
+        display: flex;
+        align-items: center;
+    }
+    .form-group label {
+        padding-right: 10px;
+        width: 70px;
+    }
+    .form-row {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .btn-form {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .form-group textarea {
+        height: 50px;
+        resize: vertical;
+    }
+}
