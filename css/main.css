@@ -40,6 +40,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .nav-link {
@@ -57,7 +58,7 @@ p {
 }
 
 .image-main {
-    background-image: url(../descarga.jpeg);
+    background-image: url(../img/descarga.jpeg);
     height: 250px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,10 +109,6 @@ p {
 
 
 /*Style main*/
-
-body {
-    background-color: #f1f3f2;
-}
 
 .main {
     background-color: #fafafa;
@@ -200,6 +197,28 @@ footer p {
     color: #777777;
 }
 
+
+/*Modo noche y dia*/
+
+#interruptor {
+    padding: 5px;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+}
+
+.bars {
+    font-size: 30px;
+    line-height: 2px;
+    padding: 2px 20px;
+    background-color: #4a719e;
+    color: #f7f7ff;
+}
+
 @media (min-width: 760px) {
     .nav-main {
         flex-direction: row;
@@ -217,6 +236,16 @@ footer p {
     .main {
         width: 90%;
         margin-top: 40px;
+    }
+    /*Modo noche Main*/
+    .main_black {
+        background-color: #6d6060;
+        margin: auto;
+        width: 90%;
+        margin-top: 40px;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        color: #f1f1f1;
     }
     .row {
         display: flex;
@@ -247,5 +276,15 @@ footer p {
     .form-group textarea {
         height: 50px;
         resize: vertical;
+    }
+    /*Interruptor*/
+    #interruptor {
+        display: block;
+    }
+    .bars {
+        display: none;
+    }
+    .nav-main {
+        display: flex;
     }
 }
